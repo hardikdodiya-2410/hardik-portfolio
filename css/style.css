@@ -256,4 +256,18 @@ body {
     color: #333;
     font-weight: 500;
   }
-  
+  .swiper-button-next, .swiper-button-prev
+  {
+    color: #ffffff !important;
+    width: 40px !important;
+    height: 40px !important;
+    font-size:20px !important;
+    background-color: black ;
+    border-radius: 50%;
+
+  }
+  .swiper-button-next:after, .swiper-button-prev:after
+  {
+    font-size: 25px !important;
+    font-weight: bold;
+  }
