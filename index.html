@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardik Dodiya - Web Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0V4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+
+    <nav id="navbar" class="navbar-custom fixed w-full z-50 py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a class="text-gray-900 font-bold text-3xl" href="#">Hardik.dev</a>
+            <button class="text-gray-700 md:hidden focus:outline-none" id="navbar-toggler">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+            <div class="hidden md:flex flex-col md:flex-row md:space-x-8" id="navbarNav">
+                <a class="nav-link-custom text-lg font-medium" href="#about">About</a>
+                <a class="nav-link-custom text-lg font-medium" href="#skills">Skills</a>
+                <a class="nav-link-custom text-lg font-medium" href="#projects">Projects</a>
+                <a class="nav-link-custom text-lg font-medium" href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="mobile-navbar-overlay" class="fixed inset-0 bg-white bg-opacity-90 z-40 hidden md:hidden flex flex-col items-center justify-center space-y-8">
+        <button class="absolute top-4 right-4 text-gray-700 text-3xl" id="close-navbar-overlay">
+            <i class="fas fa-times"></i>
+        </button>
+        <a class="text-gray-800 text-3xl font-medium hover:text-accent transition duration-300" href="#about">About</a>
+        <a class="text-gray-800 text-3xl font-medium hover:text-accent transition duration-300" href="#skills">Skills</a>
+        <a class="text-gray-800 text-3xl font-medium hover:text-accent transition duration-300" href="#projects">Projects</a>
+        <a class="text-gray-800 text-3xl font-medium hover:text-accent transition duration-300" href="#contact">Contact</a>
+    </div>
+
+    <header class="min-h-screen flex items-center justify-center text-center px-4 pt-16">
+        <div class="container mx-auto animate-fade-in">
+            <p class="text-xl md:text-2xl text-accent mb-4 animate-on-scroll">Hi, my name is</p>
+            <h1 class="text-5xl md:text-7xl font-extrabold text-gray-900 mb-4 animate-on-scroll">Hardik Dodiya.</h1>
+            <h2 class="text-3xl md:text-5xl font-bold text-gray-700 mb-8 animate-on-scroll">
+                I am a <span id="typed-text" class="cursor"></span>
+            </h2>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto text-gray-700 mb-10 animate-on-scroll">
+                A BCA graduate with a strong interest in web development and programming, seeking an opportunity to launch my career in the IT field.
+            </p>
+            <a href="#projects" class="btn-primary-custom text-lg animate-on-scroll">
+                View My Work <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </header>
+
+    <section id="about" class="py-20 px-4">
+        <div class="container mx-auto animate-on-scroll">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center md:space-x-12">
+                <div class="md:w-1/3 mb-8 md:mb-0 animate-on-scroll">
+                    <img src="https://placehold.co/400x400/f3f4f6/1f2937?text=Hardik" alt="Hardik Dodiya" class="rounded-lg w-64 h-64 mx-auto object-cover shadow-lg border-4 border-accent">
+                </div>
+                <div class="md:w-2/3 text-lg text-gray-800 animate-on-scroll">
+                    <p class="mb-4">
+                        I am a BCA graduate with a strong interest in web development and programming. Over time, I have built a good understanding of technologies like HTML, CSS, JavaScript, PHP, and Laravel.
+                    </p>
+                    <p class="mb-4">
+                        I am now seeking an opportunity to launch my career in the IT field, where I can apply my knowledge, work on real-world projects, enhance my skills, and grow as part of a supportive team.
+                    </p>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-900 mt-6">Education</h3>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>
+                            <strong>Bachelor Of Computer Application (BCA)</strong><br>
+                            MKBU University | 2022-2025
+                        </li>
+                    </ul>
+                    <h3 class="text-2xl font-semibold mt-6 mb-4 text-gray-900">Professional Experience</h3>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>
+                            <strong>Web Development Intern</strong><br>
+                            Infinity Softech | 05/2025-06/2025 | Bhavnagar, India<br>
+                            <p class="text-base mt-1">
+                                Worked on front-end and back-end development using HTML, CSS, JavaScript, jQuery, AJAX, Bootstrap, PHP, and Laravel. Built responsive web pages, implemented dynamic features, and contributed to Laravel-based CRUD operations and form validations.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 px-4 bg-gray-50 text-gray-900">
+    <div class="container mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-12">My Skills</h2>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 justify-items-center">
+            
+            <div class="skill">
+                <div class="circle" data-percentage="95">
+                    <i class="fab fa-html5 icon"></i>
+                </div>
+                <p class="percent-text">95%</p>
+                <p class="skill-name">HTML</p>
+            </div>
+
+            <div class="skill">
+                <div class="circle" data-percentage="90">
+                    <i class="fab fa-css3-alt icon"></i>
+                </div>
+                <p class="percent-text">90%</p>
+                <p class="skill-name">CSS</p>
+            </div>
+
+            <div class="skill">
+                <div class="circle" data-percentage="80">
+                    <i class="fab fa-js icon"></i>
+                </div>
+                <p class="percent-text">80%</p>
+                <p class="skill-name">JavaScript</p>
+            </div>
+
+            <div class="skill">
+                <div class="circle" data-percentage="80">
+                    <i class="fas fa-code icon"></i>
+                </div>
+                <p class="percent-text">80%</p>
+                <p class="skill-name">jQuery</p>
+            </div>
+
+            <div class="skill">
+                <div class="circle" data-percentage="85">
+                    <i class="fas fa-random icon"></i>
+                </div>
+                <p class="percent-text">85%</p>
+                <p class="skill-name">AJAX</p>
+            </div>
+
+            <div class="skill">
+                <div class="circle" data-percentage="95">
+                    <i class="fab fa-php icon"></i>
+                </div>
+                <p class="percent-text">95%</p>
+                <p class="skill-name">PHP</p>
+            </div>
+
+            <div class="skill">
+                <div class="circle" data-percentage="30">
+                    <i class="fab fa-laravel icon"></i>
+                </div>
+                <p class="percent-text">30%</p>
+                <p class="skill-name">Laravel</p>
+            </div>
+
+            <div class="skill">
+                <div class="circle" data-percentage="90">
+                    <i class="fab fa-bootstrap icon"></i>
+                </div>
+                <p class="percent-text">90%</p>
+                <p class="skill-name">Bootstrap</p>
+            </div>
+
+            <div class="skill">
+                <div class="circle" data-percentage="80">
+                    <i class="fas fa-database icon"></i>
+                </div>
+                <p class="percent-text">80%</p>
+                <p class="skill-name">MySQL</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="py-20 px-4 bg-gray-100 text-gray-800">
+  <div class="container mx-auto">
+    <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">My Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Project Card -->
+      <div class="card-custom p-6 bg-white rounded-lg shadow-md">
+        <img src="https://placehold.co/600x400/f3f4f6/1f2937?text=Clothes+Rental" alt="Clothes Rental System" class="rounded-md mb-4 w-full h-48 object-cover border border-gray-300">
+        <h3 class="text-2xl font-semibold mb-2">Clothes Rental System</h3>
+        <p class="text-sm text-gray-600 mb-4">A simple web application built with PHP and MySQL for renting wedding dresses.</p>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="badge"><i class="fab fa-php"></i> PHP</span>
+          <span class="badge"><i class="fab fa-html5"></i> HTML</span>
+          <span class="badge"><i class="fab fa-css3-alt"></i> CSS</span>
+          <span class="badge"><i class="fab fa-js"></i> JS</span>
+          <span class="badge"><i class="fas fa-database"></i> MySQL</span>
+        </div>
+        <button onclick="openModal('clothesRentalModal')" class="btn-primary-custom">View Details</button>
+      </div>
+
+      <!-- Project Modal: Clothes Rental -->
+      <div id="clothesRentalModal" class="modal hidden fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50">
+        <div class="modal-content bg-white rounded-lg p-6 max-w-2xl w-full relative">
+          <button class="absolute top-2 right-2 text-gray-700" onclick="closeModal('clothesRentalModal')">&times;</button>
+          <h3 class="text-2xl font-semibold mb-4">Clothes Rental System</h3>
+                    <!-- Swiper Carousel -->
+            <div class="swiper mySwiper rounded border overflow-hidden mb-4">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                <img src="https://placehold.co/600x400?text=Home+Page" alt="Home Page" class="w-full h-auto" />
+                </div>
+                <div class="swiper-slide">
+                <img src="https://placehold.co/600x400?text=Category+Page" alt="Category Page" class="w-full h-auto" />
+                </div>
+                <div class="swiper-slide">
+                <img src="https://placehold.co/600x400?text=Product+Details" alt="Product Details" class="w-full h-auto" />
+                </div>
+                <div class="swiper-slide">
+                <img src="https://placehold.co/600x400?text=Checkout+Page" alt="Checkout Page" class="w-full h-auto" />
+                </div>
+                <div class="swiper-slide">
+                <img src="https://placehold.co/600x400?text=Order+Confirmation" alt="Confirmation" class="w-full h-auto" />
+                </div>
+                <div class="swiper-slide">
+                <img src="https://placehold.co/600x400?text=Admin+Dashboard" alt="Admin Side" class="w-full h-auto" />
+                </div>
+                <div class="swiper-slide">
+                <img src="https://placehold.co/600x400?text=Admin+Product+Management" alt="Admin Products" class="w-full h-auto" />
+                </div>
+                <div class="swiper-slide">
+                <img src="https://placehold.co/600x400?text=Admin+Order+View" alt="Admin Orders" class="w-full h-auto" />
+                </div>
+            </div>
+
+            <!-- Swiper Controls -->
+            <!-- <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+            </div>
+        </div>
+      </div>
+
+      <!-- Project Card -->
+      <div class="card-custom p-6 bg-white rounded-lg shadow-md">
+        <img src="https://placehold.co/600x400/f3f4f6/1f2937?text=LMS" alt="LMS" class="rounded-md mb-4 w-full h-48 object-cover border border-gray-300">
+        <h3 class="text-2xl font-semibold mb-2">Learning Management System</h3>
+        <p class="text-sm text-gray-600 mb-4">A Laravel-based LMS for managing teachers, students, and results with authentication.</p>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="badge"><i class="fab fa-laravel"></i> Laravel</span>
+          <span class="badge"><i class="fab fa-php"></i> PHP</span>
+          <span class="badge"><i class="fas fa-database"></i> MySQL</span>
+        </div>
+        <button onclick="openModal('lmsModal')" class="btn-primary-custom">View Details</button>
+      </div>
+
+      <!-- Project Modal: LMS -->
+      <div id="lmsModal" class="modal hidden fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50">
+        <div class="modal-content bg-white rounded-lg p-6 max-w-2xl w-full relative">
+          <button class="absolute top-2 right-2 text-gray-700" onclick="closeModal('lmsModal')">&times;</button>
+          <h3 class="text-2xl font-semibold mb-4">Learning Management System</h3>
+          <div class="swiper mySwiper rounded border overflow-hidden mb-4">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                <img src="https://placehold.co/600x400?text=Home+Page" alt="Home Page" class="w-full h-auto" />
+                </div>
+                <div class="swiper-slide">
+                <img src="https://placehold.co/600x400?text=Category+Page" alt="Category Page" class="w-full h-auto" />
+                </div>
+                <div class="swiper-slide">
+                <img src="https://placehold.co/600x400?text=Product+Details" alt="Product Details" class="w-full h-auto" />
+                </div>
+                <div class="swiper-slide">
+                <img src="https://placehold.co/600x400?text=Checkout+Page" alt="Checkout Page" class="w-full h-auto" />
+                </div>
+                <div class="swiper-slide">
+                <img src="https://placehold.co/600x400?text=Order+Confirmation" alt="Confirmation" class="w-full h-auto" />
+                </div>
+                <div class="swiper-slide">
+                <img src="https://placehold.co/600x400?text=Admin+Dashboard" alt="Admin Side" class="w-full h-auto" />
+                </div>
+                <div class="swiper-slide">
+                <img src="https://placehold.co/600x400?text=Admin+Product+Management" alt="Admin Products" class="w-full h-auto" />
+                </div>
+                <div class="swiper-slide">
+                <img src="https://placehold.co/600x400?text=Admin+Order+View" alt="Admin Orders" class="w-full h-auto" />
+                </div>
+            </div>
+
+            <!-- Swiper Controls -->
+            <!-- <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+            </div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <section id="contact" class="py-20 bg-gray-100">
+  <div class="max-w-4xl mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center text-gray-900 mb-10">Contact Me</h2>
+
+    <div class="bg-white shadow-xl rounded-lg p-8 md:p-12">
+      <p class="text-lg text-gray-700 mb-6 text-center">
+        I'm always open to new opportunities and collaborations. Feel free to reach out!
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-gray-800 mb-8 text-center">
+        <div>
+          <i class="fas fa-envelope text-blue-600 text-2xl mb-2"></i>
+          <p><a href="mailto:hardikdodiya2410@gmail.com" class="hover:underline">hardikdodiya2410@gmail.com</a></p>
+        </div>
+        <div>
+          <i class="fas fa-phone text-blue-600 text-2xl mb-2"></i>
+          <p><a href="tel:+917285008403" class="hover:underline">+91 72850 08403</a></p>
+        </div>
+        <div>
+          <i class="fas fa-map-marker-alt text-blue-600 text-2xl mb-2"></i>
+          <p>Bhavnagar, Gujarat, India</p>
+        </div>
+      </div>
+
+      <div class="flex justify-center space-x-6">
+        <a href="https://github.com/hardikdodiya-2410" target="_blank" class="text-gray-700 hover:text-blue-600 text-3xl transition">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/hardik-dodiya-79b7592b2" target="_blank" class="text-gray-700 hover:text-blue-600 text-3xl transition">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <footer class="bg-gray-200 text-gray-700 py-8 text-center">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2025 Hardik Dodiya. All rights reserved.</p>
+            
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
