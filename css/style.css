@@ -297,7 +297,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .slide-box {
-    height: auto; /* Adjust height based on content */
+    height: 500px; /* Adjust height based on content */
     max-height: 500px; /* Max height for slide box */
     display: flex;
     flex-direction: column;
